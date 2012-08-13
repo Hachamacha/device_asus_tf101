@@ -35,6 +35,7 @@ TARGET_BOARD_PLATFORM := tegra
 TARGET_CPU_ABI := armeabi-v7a
 TARGET_CPU_ABI2 := armeabi
 TARGET_CPU_SMP := true
+TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a
 TARGET_ARCH_VARIANT_CPU := cortex-a9
 TARGET_ARCH_VARIANT_FPU := vfpv3-d16
@@ -95,9 +96,6 @@ BOARD_HAVE_BLUETOOTH_BCM := true
 
 BOARD_HAVE_GPS := true
 
-# Support for dock battery
-TARGET_HAS_DOCK_BATTERY := true
-
 # Custom Tools
 TARGET_RECOVERY_PRE_COMMAND := "echo 'boot-recovery' > /dev/block/mmcblk0p3; sync"
 TARGET_RELEASETOOL_OTA_FROM_TARGET_SCRIPT := device/asus/tf101/releasetools/tf101_ota_from_target_files
@@ -120,3 +118,6 @@ USE_ALL_OPTIMIZED_STRING_FUNCS := true
 
 # Lid hack
 TARGET_USES_TF101_LID_HACK := true
+
+# Support for dock battery
+TARGET_HAS_DOCK_BATTERY := true
