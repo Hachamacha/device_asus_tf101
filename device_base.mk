@@ -256,6 +256,9 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio_policy.conf:system/etc/audio_policy.conf
 
+# Awesome new bootanimation
+PRODUCT_COPY_FILES += \
+    device/asus/tf101/bootanim/bootanimation.zip:system/media/bootanimation.zip
 
 $(call inherit-product-if-exists, vendor/asus/tf101/device-vendor.mk)
 
