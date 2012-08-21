@@ -267,3 +267,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.rommanager.developerid=rayman33 \
     ro.modversion=JellyBean-$(RAYMAN_RELEASE)-TF101
 endif
+
+# Audio fixes
+PRODUCT_COPY_FILES += \
+   device/asus/tf101/lib/hw/audio.primary.tegra.so:system/lib/hw/audio.primary.tegra.so 
