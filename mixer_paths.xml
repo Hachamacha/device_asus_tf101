@@ -25,7 +25,6 @@
   
   <path name="hdmi">
     <ctl name="Speaker Switch" value="0" />
-    <ctl name="Line Out Switch" value="1" />
   </path>
 
   <path name="main-mic-top">

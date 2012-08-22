@@ -20,10 +20,10 @@ on fs
     mount tmpfs tmpfs /Removable mode=0755,gid=1000
 
     # temp fix for external storage mounts
-    mkdir /Removable/MicroSD 0666 system system
-    mkdir /Removable/USBdisk1 0666 system system
-    mkdir /Removable/USBdisk2 0666 system system
-    mkdir /Removable/SD 0666 system system
+    mkdir /storage/sdcard1 0770 media_rw media_rw
+    mkdir /storage/sdcard2 0770 media_rw media_rw
+    mkdir /storage/usbdisk1 0770 media_rw media_rw
+    mkdir /storage/usbdisk2 0770 media_rw media_rw
 
 on post-fs-data
     mkdir /data/misc/wifi 0770 wifi wifi
@@ -210,8 +210,9 @@ service hciattach /system/bin/brcm_patchram_plus --enable_hci --scopcm=0,2,0,0,0
 # Start GPS daemon
   on boot
   service gps-daemon /system/bin/glgps -c /system/etc/gps/gpsconfig.xml
+  socket gps seqpacket 660 gps system
   user gps
-  group root 
+  group system inet 
   class late_start
 
 # Mount usb drives as /usbdrive. Generally usb drives are formatted with FAT
