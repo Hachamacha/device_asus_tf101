@@ -74,7 +74,7 @@ arch/*/include/generated
 #patches-*
 
 # quilt's files
-patches
+# patches
 series
 
 # cscope files
