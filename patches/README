@@ -1,7 +1,0 @@
-# This is a patchset for the TF101 /frameworks/base to implement features from the overlay.
-#
-# NOTE : *.patch files can be applied on any source (AOSP, AOKP, CM), but *_manual.patch files need to be applied manually.
-#
-# For gods sake, feel free to copy/modify/redistribute these patches
-#
-# Most of these are curtesy of Roach2010, even if some of them were originally developed by e.g. rmcc (arcee) from cm. 
