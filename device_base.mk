@@ -105,7 +105,11 @@ PRODUCT_COPY_FILES += \
 # Modules
 PRODUCT_COPY_FILES += \
     device/asus/tf101/modules/battery_rvsd.ko:system/lib/modules/battery_rvsd.ko \
-    device/asus/tf101/modules/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko
+    device/asus/tf101/modules/scsi_wait_scan.ko:system/lib/modules/scsi_wait_scan.ko \
+    device/asus/tf101/modules/scsi_wait_scan.ko:system/lib/modules/cifs.ko \
+    device/asus/tf101/modules/scsi_wait_scan.ko:system/lib/modules/tun.ko \
+    device/asus/tf101/modules/scsi_wait_scan.ko:system/lib/modules/xpad.ko \
+    device/asus/tf101/modules/scsi_wait_scan.ko:system/lib/modules/ff-memless.ko
 
 # Ramdisk files
 PRODUCT_COPY_FILES += \
