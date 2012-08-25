@@ -11,9 +11,6 @@ on early-init
     symlink /storage/sdcard0 /sdcard
     symlink /storage/sdcard0 /mnt/sdcard
 
-    # create directory for mounting usb drives -- not needed anymore. We use /storage from now on
-    mkdir /Removable 0755 media_rw media_rw
-
 on fs
     mount_all /fstab.ventana
     setprop ro.crypto.fuse_sdcard true
